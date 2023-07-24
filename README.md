@@ -1,3 +1,3 @@
-# 我的学术主页
+# Welcome to Xiaoshuo Lin's homepage!
 
 **My  homepage:** https://xiaoshuo-lin.github.io/
