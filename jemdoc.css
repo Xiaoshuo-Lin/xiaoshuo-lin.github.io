@@ -64,32 +64,6 @@ a:hover {
 	border-bottom: 1px gray dotted;
 }
 
-a.pdf, a.slides {
-	border: 1px solid;
-	margin-left: 4px;
-	margin-right: 4px;
-	padding: 2px 4px 2px 4px;
-	display: inline flow-root;
-	border-radius: 4pt;
-	border-width: 0pt;
-	font-weight: bold;
-	font-size: 85%;
-	color: white;
-	background-color: #c91e26;
-}
-
-a.pdf:hover, a.slides:hover {
-	text-decoration: none;
-}
-
-a.pdf {
-	background-color: #c91e26;
-}
-
-a.slides {
-	background-color: #0000cd;
-}
-
 #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #022b6d;
 	border-bottom: 1px gray solid;
