@@ -64,7 +64,7 @@ a:hover {
 	border-bottom: 1px gray dotted;
 }
 
-a.pdf {
+a.pdf, a.slides {
 	border: 1px solid;
 	margin-left: 4px;
 	margin-right: 4px;
@@ -78,8 +78,16 @@ a.pdf {
 	background-color: #c91e26;
 }
 
-a.pdf:hover {
+a.pdf:hover, a.slides:hover {
 	text-decoration: none;
+}
+
+a.pdf {
+  background-color: #c91e26;
+}
+
+a.slides {
+  background-color: #0000cd;
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
