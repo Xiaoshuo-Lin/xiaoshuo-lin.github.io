@@ -98,10 +98,10 @@ div.menu-category {
 	font-weight: bold;
 }
 
-div.menu-item {
+/* div.menu-item {
 	padding-left: 16px;
 	text-indent: -16px;
-}
+} */
 
 div#toptitle {
 	padding-bottom: 0.2em;
