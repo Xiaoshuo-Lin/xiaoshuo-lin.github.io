@@ -442,6 +442,11 @@ E-mail: <img src="photos/email.png" alt="email" height="17px" style="vertical-al
 </tr>
 </table>
 <script>
+window.addEventListener("hashchange", function() {
+    history.replaceState(null, null, " ");
+});
+</script>
+<!-- <script>
 function removeHash() { 
     history.pushState("", document.title, window.location.pathname + window.location.search);
 }
@@ -450,7 +455,7 @@ function removeHash() {
 window.addEventListener("load", function() {
     setTimeout(removeHash, 10);
 });
-</script>
+</script> -->
 </body>
 <script>
     document.querySelector('.scroll-to-top a').addEventListener('click', function(event) {
