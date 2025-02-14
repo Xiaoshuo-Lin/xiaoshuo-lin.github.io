@@ -441,6 +441,9 @@ E-mail: <img src="photos/email.png" alt="email" height="17px" style="vertical-al
 </td>
 </tr>
 </table>
+window.addEventListener("hashchange", function() {
+    history.replaceState(null, null, " ");
+});
 </body>
 <script>
     document.querySelector('.scroll-to-top a').addEventListener('click', function(event) {
