@@ -80,11 +80,11 @@ a:hover {
 }
 
 #layout-menu a.current:link {
-	color: #022b6d;
+	color: #858585;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:hover {
-	color: #797979;
+	color: #aab6e9;
 	text-decoration: none;
 }
 #layout-menu a:link {
