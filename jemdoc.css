@@ -86,6 +86,7 @@ a:hover {
 }
 #layout-menu a:hover {
 	color: #000000;
+	background: #eeeeee;
 	text-decoration: none;
 }
 
