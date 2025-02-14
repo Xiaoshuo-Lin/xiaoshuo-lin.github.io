@@ -87,11 +87,9 @@ a:hover {
 	color: #797979;
 	text-decoration: none;
 }
-#layout-menu a:hover {
-	text-decoration: none;
-}
 
 div.menu-category {
+	color: #000000;
 	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
