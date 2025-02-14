@@ -441,6 +441,16 @@ E-mail: <img src="photos/email.png" alt="email" height="17px" style="vertical-al
 </td>
 </tr>
 </table>
+<script>
+function removeHash() { 
+    history.pushState("", document.title, window.location.pathname + window.location.search);
+}
+
+// Remove hash after page load (wait a bit to ensure scrolling is done)
+window.addEventListener("load", function() {
+    setTimeout(removeHash, 10);
+});
+</script>
 </body>
 <script>
     document.querySelector('.scroll-to-top a').addEventListener('click', function(event) {
