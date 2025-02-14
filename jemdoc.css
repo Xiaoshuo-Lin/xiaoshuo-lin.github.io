@@ -14,16 +14,31 @@ body {
 }
 
 #layout-menu {
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 1.0em;
-	width: auto;
-	white-space: nowrap;
-    	text-align: left;
-	vertical-align: top;
+    background: #f6f6f6;
+    border: 1px solid #dddddd;
+    padding-top: 0.5em;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.0em;
+    width: auto;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+    position: relative;  /* Ensure the sidebar can position its child elements */
+}
+
+.scroll-to-top {
+    position: absolute;
+    bottom: 20px;   /* Distance from the bottom of the sidebar */
+    left: 50%;      /* Center horizontally in the sidebar */
+    transform: translateX(-50%);  /* Adjust to truly center it */
+    z-index: 1000;  /* Ensure it appears above other content */
+}
+
+.scroll-to-top img {
+    width: 40px;   /* Adjust size of the arrow */
+    height: 40px;
+    display: block; /* Ensure it is treated as a block-level element */
 }
 
 #layout-menu td {
