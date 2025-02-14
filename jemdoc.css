@@ -82,7 +82,7 @@ a:hover {
 
 #layout-menu a.current:link {
 	color: #858585;
-	border-bottom: 1px gray solid;
+/* 	border-bottom: 1px gray solid; */
 }
 #layout-menu a:hover {
 	color: #000000;
