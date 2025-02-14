@@ -58,8 +58,7 @@ body {
 
 #layout-menu a {
 	display: block;
-	line-height: 1.5em;
-	margin-left: 0.5em;
+	padding: 10px;  /* Optional: Adjust padding for better spacing */
 }
 
 tt {
