@@ -71,7 +71,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #383c4d;
 	text-decoration: none;
 }
 
@@ -85,10 +85,6 @@ a:hover {
 }
 #layout-menu a:hover {
 	color: #aab6e9;
-	text-decoration: none;
-}
-#layout-menu a:link {
-	color: #000000;
 	text-decoration: none;
 }
 
