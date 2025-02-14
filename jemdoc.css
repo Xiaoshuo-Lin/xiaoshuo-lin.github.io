@@ -80,8 +80,7 @@ a, a > tt {
 } */
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-/* 	color: #022b6d; */
-	color: #000000;
+	color: #022b6d;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
