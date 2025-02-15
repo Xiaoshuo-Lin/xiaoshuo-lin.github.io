@@ -14,16 +14,16 @@
 <link href="color-block.css" rel="stylesheet" />
 <!-- MathJax -->
 <script id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <!-- End MathJax -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XQGQ70EVC"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-2XQGQ70EVC');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2XQGQ70EVC');
 </script>
 <!-- End Google Analytics -->
 </head>
@@ -338,20 +338,13 @@ E-mail: <img src="photos/email.png" alt="email" height="17px" style="vertical-al
 <li><p><a href="https://aareyanmanzoor.github.io/Texromancers.html">The TeXromancers</a> — a group that TeX’s up old book and modernizes notation in them</p>
 </li>
 </ul>
-<!-- <h3>English</h3>
-<ul>
-<li><p><a href="https://www.english-corpora.org/coca/">Corpus of Contemporary American English</a></p>
-</li>
-<li><p><a href="https://www.thefreedictionary.com/">The Free Dictionary</a></p>
-</li>
-<li><p><a href="https://www.ted.com/">TED</a></p>
-</li>
-</ul> -->
 <h3><a href="#top">Useful Tools</a></h3>
 <ul>
 <li><p><a href="https://chatgpt.com/">ChatGPT</a></p>
 </li>
 <li><p><a href="https://gptzero.me/">GPTZero: AI Detection</a></p>
+</li>
+<li><p><a href="https://www.english-corpora.org/coca/">Corpus of Contemporary American English</a></p>
 </li>
 <li><p><a href="https://docstransfer.com">Documents Transfer</a></p>
 </li>
@@ -441,12 +434,14 @@ E-mail: <img src="photos/email.png" alt="email" height="17px" style="vertical-al
 </td>
 </tr>
 </table>
+<!-- Prevent hash fragments from appearing in the URL -->
 <script>
-window.addEventListener("hashchange", function() {
-    history.replaceState(null, null, " ");
-});
+    window.addEventListener("hashchange", function() {
+        history.replaceState(null, null, " ");
+    });
 </script>
 </body>
+<!-- Smooth scroll to top functionality -->
 <script>
     document.querySelector('.scroll-to-top a').addEventListener('click', function(event) {
         event.preventDefault();
