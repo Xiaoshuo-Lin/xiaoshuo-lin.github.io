@@ -7,6 +7,6 @@
 
 ![pages-build-deployment](https://github.com/Xiaoshuo-Lin/xiaoshuo-lin.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Xiaoshuo-Lin/xiaoshuo-lin.github.io?logo=GitHub)
-![last commit](https://badgen.net/github/last-commit/Xiaoshuo-Lin/xiaoshuo-lin.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/Xiaoshuo-Lin/xiaoshuo-lin.github.io?logo=githubactions&logoColor=f3f3f3&color=pink)
 
 </div>
