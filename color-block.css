@@ -1,4 +1,4 @@
-a.arXiv, a.doi, a.slides, a.pdf, a.video {
+a.arXiv, a.doi, a.slides, a.pdf, a.video, a.tag, a.text {
   border: 1px solid;
   margin-left: 4px;
   margin-right: 4px;
@@ -40,4 +40,34 @@ a.pdf {
 
 a.video {
   background-color: #00a1d6;
+}
+
+a.tag {
+  border-radius: 4pt;
+  border-width: 0pt;
+  font-weight: bold;
+  font-size: 85%;
+  color: #353a3f;
+  background-color: #f5f5f5;
+}
+
+a.text {
+  border-color: #0088cc;
+  border-radius: 4pt;
+  border-width: 0.1pt;
+  font-weight: bold;
+  font-size: 85%;
+  color: #0088cc;
+  background-color: #ffffff;
+}
+
+a.tag:hover {
+  background-color: #e3e6e8;
+  color: #0c0d0e;
+}
+
+a.text:hover {
+  border-width: 0.1pt;
+  background-color: #f2f2f2;
+  color: #000000;
 }
