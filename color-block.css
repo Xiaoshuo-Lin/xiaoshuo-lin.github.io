@@ -54,7 +54,7 @@ a.tag {
 a.text {
   border-color: #0088cc;
   border-radius: 4pt;
-  border-width: 0.1pt;
+  border-width: 0.8pt;
   font-weight: bold;
   font-size: 85%;
   color: #0088cc;
@@ -67,7 +67,7 @@ a.tag:hover {
 }
 
 a.text:hover {
-  border-width: 0.1pt;
+  border-width: 0.8pt;
   background-color: #dcebf9;
   color: #000000;
 }
