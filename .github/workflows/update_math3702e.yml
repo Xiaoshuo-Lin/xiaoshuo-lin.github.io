@@ -2,7 +2,7 @@ name: Update MATH3702E.html
 
 on:
   schedule:
-    - cron: '55 6 * * 5'  # Runs every Thursday 16:00 UTC (Friday 00:00 Beijing Time)
+    - cron: '48 7 * * 5'  # Runs every Thursday 16:00 UTC (Friday 00:00 Beijing Time)
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -21,8 +21,8 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           git add MATH3702E.html
           git commit -m "Auto-update MATH3702E.html" || exit 0
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Xiaoshuo-Lin/xiaoshuo-lin.github.io.git main
