@@ -2,7 +2,7 @@ name: Update MATH3702E.html
 
 on:
   schedule:
-    - cron: '10 8 * * 5'  # Runs every Thursday 16:00 UTC (Friday 00:00 Beijing Time)
+    - cron: '20 8 * * 5'  # Runs every Thursday 16:00 UTC (Friday 00:00 Beijing Time)
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
