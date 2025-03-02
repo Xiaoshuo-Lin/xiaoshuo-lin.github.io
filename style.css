@@ -84,6 +84,7 @@ a:hover {
 #layout-menu a:hover {
 	color: #000000;
 	text-decoration: none;
+	border-bottom: none;
 }
 
 div.menu-category {
@@ -146,6 +147,11 @@ h2 {
 
 h2 + h3 {
 	padding-top: 0.2em;
+}
+
+h2 a:hover {
+    text-decoration: none;
+    border-bottom: none;
 }
 
 h3 {
