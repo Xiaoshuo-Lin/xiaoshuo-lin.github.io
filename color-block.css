@@ -1,4 +1,4 @@
-a.arXiv, a.doi, a.slides, a.pdf, a.video, a.tag, a.text {
+a.arXiv, a.doi, a.slides, a.pdf, a.video, a.tag, a.text, a.sol {
   border: 1px solid;
   margin-left: 4px;
   margin-right: 4px;
@@ -6,7 +6,7 @@ a.arXiv, a.doi, a.slides, a.pdf, a.video, a.tag, a.text {
   display: inline flow-root;
 }
 
-a.arXiv:hover, a.doi:hover, a.slides:hover, a.pdf:hover, a.video:hover {
+a.arXiv:hover, a.doi:hover, a.slides:hover, a.pdf:hover, a.video:hover, a.sol:hover {
   text-decoration: none;
 }
 
@@ -22,7 +22,7 @@ a.doi {
   background-color: #f0f8ff;
 }
 
-a.slides, a.pdf, a.video {
+a.slides, a.pdf, a.video, a.sol {
   border-radius: 4pt;
   border-width: 0pt;
   font-weight: bold;
@@ -40,6 +40,10 @@ a.pdf {
 
 a.video {
   background-color: #00a1d6;
+}
+
+a.sol {
+  background-color: #18864b;
 }
 
 a.tag {
