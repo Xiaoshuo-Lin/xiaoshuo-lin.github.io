@@ -8,6 +8,6 @@
 ![pages-build-deployment](https://github.com/Xiaoshuo-Lin/xiaoshuo-lin.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Xiaoshuo-Lin/xiaoshuo-lin.github.io?logo=GitHub)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Xiaoshuo-Lin/xiaoshuo-lin.github.io?color=brown)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightblue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 </div>
