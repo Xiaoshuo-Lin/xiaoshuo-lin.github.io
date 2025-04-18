@@ -1,0 +1,26 @@
+name: Update MATH3702E.html
+
+on:
+  schedule:
+    - cron: '50 15 * * 4'  # Runs every Thursday 15:50 UTC (Thursday 23:50 Beijing Time)
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  update-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Modify MATH3702E.html
+        run: |
+          sed -i 's|<!-- <a class="sol"|<a class="sol"|g' MATH3702E.html
+          sed -i 's|</a> -->|</a>|g' MATH3702E.html
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add MATH3702E.html
+          git commit -m "Auto-update MATH3702E.html" || exit 0
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Xiaoshuo-Lin/xiaoshuo-lin.github.io.git main
