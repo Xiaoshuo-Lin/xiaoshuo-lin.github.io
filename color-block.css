@@ -71,27 +71,6 @@ a.tag:hover {
     position: relative;
 }
 
-a.tag::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color: white;
-    color: #0c0d0e;
-    border: 1px solid #ccc;
-    padding: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 0.2s, opacity 0.3s ease-in-out 0.2s;
-    font-size: 12px;
-    white-space: pre;
-    z-index: 10;
-    border-radius: 5px;
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    font-weight: bold;
-    pointer-events: none;
-}
 
 a.tag:hover::after {
     visibility: visible;
