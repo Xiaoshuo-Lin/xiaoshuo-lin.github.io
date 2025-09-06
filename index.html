@@ -1,456 +1,366 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Xiaoshuo Lin" />
-<meta name="description" content="The math page of Xiaoshuo Lin" />
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="style.css" type="text/css" />
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="bookmark" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Xiaoshuo Lin">
+<meta name="description" content="The math page of Xiaoshuo Lin">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color-block.css">
+<link rel="icon" href="favicon.ico">
 <title>Xiaoshuo Lin’s Homepage</title>
-<link href="color-block.css" rel="stylesheet" />
-<!-- MathJax -->
-<script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-<!-- End MathJax -->
-<!-- Google tag (gtag.js) -->
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XQGQ70EVC"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2XQGQ70EVC');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-2XQGQ70EVC');
 </script>
-<!-- End Google Analytics -->
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
+<table id="tlayout"><tr>
 <td id="layout-menu">
 <div class="menu-category"><a href="https://github.com/Xiaoshuo-Lin">GitHub</a></div>
-<div class="menu-category"><a href="#resources" draggable="false">Resources</a></div>
-<div class="menu-item"><a class="tag" data-tooltip="Mathematical Analysis&#10;Real Analysis&#10;Complex Analysis&#10;Special Functions&#10;Functional Analysis&#10;Differential Equations" href="#analysis" draggable="false">Analysis</a></div>
-<div class="menu-item"><a class="tag" data-tooltip="Linear Algebra&#10;Abstract Algebra&#10;Commutative Algebra&#10;Homological Algebra&#10;Lie Groups and Lie Algebras" href="#algebra" draggable="false">Algebra</a></div>
-<div class="menu-item"><a class="tag" data-tooltip="Probability Theory&#10;Stochastic Processes" href="#probability" draggable="false">Probability</a></div>
-<div class="menu-item"><a class="tag" data-tooltip="Foundations of Geometry&#10;General Topology&#10;Differential Geometry&#10;Smooth Manifolds&#10;Riemannian Geometry&#10;Algebraic Topology&#10;Characteristic Classes&#10;Algebraic Geometry" href="#geometry" draggable="false">Geometry</a></div>
-<div class="menu-item"><a class="tag" data-tooltip="Freshman Seminar&#10;Scientific Programming with Python&#10;General Physics" href="#miscellaneous" draggable="false">Miscellaneous</a></div>
-<div class="menu-category"><a href="#links" draggable="false">Helpful Links</a></div>
-<div class="scroll-to-top"><a draggable="false"><img src="photos/arrow-circle-up.svg" draggable="false" alt="Back to top" title="Back to top" style="cursor: pointer; opacity: 0.7; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1.0'" onmouseout="this.style.opacity='0.7'" /></a></div>
+<div class="menu-category"><a data-target="ta" draggable="false">Teaching Assistant</a></div>
+	<div><a class="tag" href="MATH3702E.html">Honors Complex Analysis</a></div>
+	<div><a class="tag" href="001707E.html">Honors Topology</a></div>
+<div class="menu-category"><a data-target="res" draggable="false">Course Resources</a></div>
+<div class="has-submenu">
+	<a class="tag">Analysis</a>
+	<div class="submenu">
+		<div><a data-target="math-ana">Mathematical Analysis</a></div>
+		<div><a data-target="real-ana">Real Analysis</a></div>
+		<div><a data-target="cplx-ana">Complex Analysis</a></div>
+		<div><a data-target="spec-func">Special Functions</a></div>
+		<div><a data-target="func-ana">Functional Analysis</a></div>
+		<div><a data-target="diff-eq">Differential Equations</a></div>
+	</div>
+</div>
+<div class="has-submenu">
+	<a class="tag">Algebra and Combinatorics</a>
+	<div class="submenu">
+		<div><a data-target="lin-alg">Linear Algebra</a></div>
+		<div><a data-target="abs-alg">Abstract Algebra</a></div>
+		<div><a data-target="com-alg">Commutative Algebra</a></div>
+		<div><a data-target="hom-alg">Homological Algebra</a></div>
+		<div><a data-target="lie-alg">Lie Groups and Lie Algebras</a></div>
+		<div><a data-target="comb">Combinatorics</a></div>
+	</div>
+</div>
+<div class="has-submenu">
+	<a class="tag">Probability</a>
+	<div class="submenu">
+		<div><a data-target="prob">Probability Theory</a></div>
+		<div><a data-target="stoch-proc">Stochastic Processes</a></div>
+	</div>
+</div>
+<div class="has-submenu">
+	<a class="tag">Geometry and Topology</a>
+	<div class="submenu">
+		<div><a data-target="found-geo">Foundations of Geometry</a></div>
+		<div><a data-target="gen-top">General Topology</a></div>
+		<div><a data-target="diff-geo">Differential Geometry</a></div>
+		<div><a data-target="sm-mfd">Smooth Manifolds</a></div>
+		<div><a data-target="riem-geo">Riemannian Geometry</a></div>
+		<div><a data-target="alg-top">Algebraic Topology</a></div>
+		<div><a data-target="char-cls">Characteristic Classes</a></div>
+		<div><a data-target="alg-geo">Algebraic Geometry</a></div>
+	</div>
+</div>
+<div class="has-submenu">
+	<a class="tag">Miscellany</a>
+	<div class="submenu">
+		<div><a data-target="fr-sem">Freshman Seminar</a></div>
+		<div><a data-target="sci-py">Scientific Python</a></div>
+		<div><a data-target="gen-phys">General Physics</a></div>
+	</div>
+</div>
+<div class="menu-category"><a data-target="links" draggable="false">Useful Links</a></div>
+<div class="menu-category"><a href="https://s01.flagcounter.com/more/WrpR/" draggable="false" target="_blank" rel="noopener noreferrer">Visitors</a></div>
+<div class="flagcounter-wrapper">
+	<img src="https://s01.flagcounter.com/count2/WrpR/bg_F5F5F5/txt_000000/border_F5F5F5/columns_2/maxflags_6/viewers_3/labels_1/pageviews_1/flags_0/percent_0/" draggable="false" alt="Flag Counter" title="The math page of Xiaoshuo Lin">
+	<div class="flagcounter-cover"></div>
+</div>
+<div class="scroll-to-top"><a data-target="top"><img src="photos/arrow-circle-up.svg" alt="Back to top" title="Back to top" draggable="false"></a></div>
 </td>
 <td id="layout-content">
-<div id="toptitle">
-<h1>Xiaoshuo Lin <img src="photos/name.webp" draggable="false" alt="Xiaoshuo Lin" height="20px"></h1>
+<div id="toptitle"><h1>Xiaoshuo Lin <svg xmlns="https://www.w3.org/2000/svg" width="110" height="28"><text x="0" y="24" font-family="Noto Serif SC, Songti SC, serif" font-size="22" fill="#08c">林晓烁</text></svg></h1></div>
+<div style="display: flex; align-items: flex-end;">
+	<img src="photos/bio-photo.webp" width="107px" height="160px" />
+	<div style="margin-left: 20px; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px;">
+		<div style="font-weight: bold; line-height: 2;">Undergraduate at USTC</div>
+		<div style="line-height: 1.35;">
+			Hua Loo-Keng Talent Program in Mathematics<br>
+			School of Mathematical Sciences<br>
+			University of Science and Technology of China<br>
+			<small>Hefei 230026, Anhui Province, P. R. China</small>
+		</div>
+		<div><img src="https://img.shields.io/badge/sparkle--lin%40mail.ustc.edu.cn-08c?style=flat-square&logo=mailboxdotorg&logoColor=white&labelColor=08c" height="22px" draggable="false" /></div>
+	</div>
 </div>
-<table class="imgtable"><tr><td>
-<a href="https://xiaoshuo-lin.github.io/"><img src="photos/bio-photo.webp" alt="bio-photo" width="107px" height="160px" /></a>&nbsp;</td>
-<td align="left"><p><b>Undergraduate at USTC </b> <br />
-School of Mathematical Sciences, University of Science and Technology of China <br />
-Hefei, Anhui Province, P. R. China <br />
-E-mail: <img src="https://img.shields.io/badge/sparkle--lin-%40mail.ustc.edu.cn-blue" draggable="false" alt="email" height="22px" style="vertical-align: middle;" /></p>
-</td></tr></table>
-<h2><a href="#top">About Me</a></h2>
-<p>2022.09–Present: Undergraduate, in <a href="https://catalog.ustc.edu.cn/program/t01">the Hua Loo-Keng Talent Program in Mathematics</a>, <a href="https://math.ustc.edu.cn/">School of Mathematical Sciences</a>, <a href="http://www.ustc.edu.cn">University of Science and Technology of China</a>.</p>
-<p>2019.09–2022.06: Senior High School, <a href="http://www.hsfz.net.cn/">The Affiliated High School of South China Normal University</a>.</p>
-<p>My research interests lie in Geometry and Topology.</p>
-<p>In Spring 2025, I am serving as the teaching assistant for <a href="MATH3702E.html">MATH3702E</a>: Complex Analysis (Honors).</p>
-<h2 id="resources"><a href="#top">Course Resources</a></h2>
-<p>Here are some course resources that might be helpful! :)</p>
-<p xmlns:cc="http://creativecommons.org/ns#" >All works created by me are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" draggable="false" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" draggable="false" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" draggable="false" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" draggable="false" alt=""></a></p>
-<h3 id="analysis"><a href="#top">Mathematical Analysis 数学分析</a></h3>
+<h2>About Me</h2>
+<h3>Education</h3>
 <ul>
-<li><p>Notes <a class="pdf" href="files/MA.pdf">PDF</a></p>
-</li>
-<li><p>Mathematical Analysis (A3) Homework Assignments <a class="pdf" href="files/MAA3.pdf">PDF</a></p>
-</li>
+	<li><p>Sep 2022 – Jun 2026 (Expected): Undergraduate, <a href="https://catalog.ustc.edu.cn/program/t01?lang=en">Hua Loo-Keng Talent Program in Mathematics</a>, <a href="https://math.ustc.edu.cn/">School of Mathematical Sciences</a>, <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>.</p></li>
+	<li><p>Sep 2019 – Jun 2022: Senior High School, <a href="http://www.hsfz.net.cn/">The Affiliated High School of South China Normal University</a>.</p></li>
 </ul>
-<h3><a href="#top">Real Analysis 实分析</a></h3>
+<h3>Research Interests</h3>
 <ul>
-<li><p>Real Analysis (Honors) Homework Assignments <a class="pdf" href="files/RA.pdf">PDF</a></p>
-</li>
-<li><p><a href="https://www.math.ucla.edu/~tao/245a.1.10f/">Real Analysis by Terence Tao @UCLA</a></p>
-</li>
+	<li><p>Geometric Analysis</p></li>
+	<li><p>Algebraic Topology</p></li>
 </ul>
-<h3><a href="#top">Complex Analysis 复分析</a></h3>
+<h2 id="ta">Teaching Assistant</h2>
 <ul>
-<li><p>Complex Analysis (Honors) Homework Assignments <a class="pdf" href="files/CA.pdf">PDF</a></p>
-    <p>I am updating an <a class="pdf" href="files/CA-Errata.pdf">Errata</a> to <i>Complex Analysis</i> by Stein and Shakarchi.</p>
-</li>
-<li><p>Visualize complex mappings with <a href="https://aldenbradford.com/ConformalMapViewer/">Visualizer 1</a> and <a href="https://mabotkin.github.io/complex/">Visualizer 2</a></p>
-</li>
-<li><p>Move the mouse around to explore the <a href="https://roywilliams.github.io/play/js/sl2z/">beautiful group, \(\operatorname{SL}(2,\mathbb{Z})\)</a></p>
-</li>
-<li><p><a href="https://www.math.cuhk.edu.hk/course_builder/2223/math4060/">A second course in Complex Analysis @CUHK</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/ModFor//">Modular Forms @BIMSA</a></p>
-</li>
+	<li><p><a href="MATH3702E.html">MATH3702E</a>: Honors Complex Analysis (Spring 2025).</p></li>
+	<li><p><a href="001707E.html">001707E</a>: Honors Topology (Fall 2025).</p></li>
 </ul>
-<h3><a href="#top">Special Functions 特殊函数</a></h3>
+<h2 id="res">Course Resources</h2>
+<p>All works created by me are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0</a><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" draggable="false" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" draggable="false" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" draggable="false" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" draggable="false" alt=""></p>
+<h3 id="math-ana">Mathematical Analysis</h3>
 <ul>
-<li><p><a href="https://dlmf.nist.gov/">NIST Digital Library of Mathematical Functions</a></p>
-</li>
-<li><p><a href="https://mtaylor.web.unc.edu/notes/special-functions/">Notes on special functions by Michael Taylor</a></p>
-</li>
-<li><p><a href="https://www.zhihu.com/column/c_1654611816402530304">Travor Liu’s Zhihu pages</a></p>
-</li>
-<li><p><i>Costa’s Minimal Surface — Asymptotics of the Ends and Symmetry of the Surface</i> <a class="slides" href="files/Costa-Calc.pdf">Slides</a> <a href="files/Costa-3D.html"><img alt="Light" src="https://img.shields.io/badge/Light-red?logo=Julia&labelColor=lightyellow" height="22px" style="vertical-align: middle;" ></a> <a href="files/Costa-3D-Viridis.html"><img alt="Dark" src="https://img.shields.io/badge/Dark-378F9E?logo=Julia&logoColor=ADE746&labelColor=523F8B" height="22px" style="vertical-align: middle;" ></a></p>
-</li>
+	<li><p>Notes <a class="pdf" href="files/MA.pdf">PDF</a></p></li>
+	<li><p>Mathematical Analysis (A3) Homework Assignments <a class="pdf" href="files/MAA3.pdf">PDF</a></p></li>
 </ul>
-<h3><a href="#top">Functional Analysis 泛函分析</a></h3>
+<h3 id="real-ana">Real Analysis</h3>
 <ul>
-<li><p>Functional Analysis (Honors) Homework Assignments <a class="pdf" href="files/FA.pdf">PDF</a></p>
-</li>
-<li><p>Functional Analysis @PKU <a class="video" href="https://liveclass.org.cn/cloudCourse/#/courseDetail/BZ1920200132350_14083">Videos</a></p>
-</li>
+	<li><p>Honors Real Analysis Homework Assignments <a class="pdf" href="files/RA.pdf">PDF</a></p></li>
+	<li><p><a href="https://www.math.ucla.edu/~tao/245a.1.10f/">Real Analysis by Terence Tao @UCLA</a></p></li>
 </ul>
-<h3><a href="#top">Introduction to Differential Equations 微分方程引论</a></h3>
+<h3 id="cplx-ana">Complex Analysis</h3>
 <ul>
-<li><p>Notes (on ODEs) and Homework Assignments <a class="pdf" href="files/DE.pdf">PDF</a></p>
-    <p>Handwritten Notes on PDEs <a class="pdf" href="files/PDE-Notes.pdf">PDF</a></p>
-</li>
-<li><p><a href="https://web.stanford.edu/class/ee363/lectures/">More on Lyapunov Theory @Stanford</a></p>
-</li>
-<li><p>Errata to <i>Partial Differential Equations</i> by Lawrence C. Evans <a class="pdf" href="https://math.berkeley.edu/~evans/errata.PDE.third.printing2.pdf">PDF</a></p>
-</li>
-<li><p><a href="http://math.bu.edu/people/bob/hsd/errata.html">Errata to <i>Differential Equations, Dynamical Systems, and an Introduction to Chaos</i> by Morris Hirsch, Robert L. Devaney, and Stephen Smale</a></p>
-</li>
+	<li><p>Honors Complex Analysis Homework Assignments <a class="pdf" href="files/CA.pdf">PDF</a></p></li>
+	<li><p>Errata to <i>Complex Analysis</i> by Stein and Shakarchi <a class="pdf" href="files/CA-Errata.pdf">PDF</a></p></li>
+	<li><p>Visualize complex mappings with <a href="https://aldenbradford.com/ConformalMapViewer/">Visualizer 1</a> and <a href="https://mabotkin.github.io/complex/">Visualizer 2</a></p></li>
+	<li><p>Move the mouse around to explore the <a href="https://roywilliams.github.io/play/js/sl2z/">beautiful group, \(\operatorname{SL}(2,\mathbb{Z})\)</a></p></li>
+	<li><p><a href="https://www.math.cuhk.edu.hk/course_builder/2223/math4060/">A second course in Complex Analysis @CUHK</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/ModFor/">Modular Forms @BIMSA</a></p></li>
 </ul>
-<h3 id="algebra"><a href="#top">Linear Algebra 线性代数</a></h3>
+<h3 id="spec-func">Special Functions</h3>
 <ul>
-<li><p>Lecture Notes on Linear Algebra <a class="pdf" href="http://210.45.79.25/xxds/线性代数讲义.pdf" title="USTC only">PDF</a></p>
-</li>
-<li><p>Notes and Homework Assignments <a class="pdf" href="files/LA.pdf">PDF</a></p>
-</li>
+	<li><p><a href="https://dlmf.nist.gov/">NIST Digital Library of Mathematical Functions</a></p></li>
+	<li><p><a href="https://mtaylor.web.unc.edu/notes/special-functions/">Notes on special functions by Michael Taylor</a></p></li>
+	<li><p><a href="https://www.zhihu.com/column/c_1654611816402530304">Travor Liu’s Zhihu pages</a></p></li>
+	<li><p><i>Costa’s Minimal Surface — Asymptotics of the Ends and Symmetry of the Surface</i> <a class="slides" href="files/Costa-Calc.pdf">Slides</a> <a href="files/Costa-3D.html"><img alt="Light" src="https://img.shields.io/badge/Light-red?logo=Julia&labelColor=lightyellow" height="22px" style="vertical-align: middle;" ></a> <a href="files/Costa-3D-Viridis.html"><img alt="Dark" src="https://img.shields.io/badge/Dark-378F9E?logo=Julia&logoColor=ADE746&labelColor=523F8B" height="22px" style="vertical-align: middle;" ></a></p></li>
 </ul>
-<h3><a href="#top">Abstract Algebra 近世代数</a></h3>
+<h3 id="func-ana">Functional Analysis</h3>
 <ul>
-<li><p>Notes and Homework Assignments <a class="pdf" href="files/Algebra.pdf">PDF</a></p>
-</li>
-<li><p>Visit <a href="https://people.maths.bris.ac.uk/~matyd/GroupNames/index.html">Group Names</a>, <a href="https://nathancarter.github.io/group-explorer/index.html">Group Explorer</a>, and <a href="https://groups.quendi.de/">Number of Small Groups</a> for an excursion among groups</p>
-</li>
-<li><p>Abstract Algebra @BSU <a class="video" href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Videos</a></p>
-</li>
-<li><p><a href="https://web.archive.org/web/20170423133403/https://crazyproject.wordpress.com/aadf/">Solutions to exercises from <i>Abstract Algebra</i> by Dummit and Foote</a></p>
-</li>
+	<li><p>Honors Functional Analysis Homework Assignments <a class="pdf" href="files/FA.pdf">PDF</a></p></li>
+	<li><p>Functional Analysis @PKU <a class="video" href="https://liveclass.org.cn/cloudCourse/#/courseDetail/BZ1920200132350_14083">Videos</a></p></li>
 </ul>
-<h3><a href="#top">Commutative Algebra 交换代数</a></h3>
+<h3 id="diff-eq">Differential Equations</h3>
 <ul>
-<li><p>“Commutative Algebra” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/watch?v=QOTf8KfrZFU&list=PL8yHsr3EFj53rSexSz7vsYt-3rpHPR3HB">Videos</a></p>
-</li>
-<li><p><a href="https://agag-gathmann.math.rptu.de/en/commalg.php">Notes on Commutative Algebra @RPTU</a></p>
-</li>
+	<li><p>Notes (on ODEs) and Homework Assignments <a class="pdf" href="files/DE.pdf">PDF</a></p></li>
+	<li><p>Handwritten Notes on PDEs <a class="pdf" href="files/PDE-Notes.pdf">PDF</a></p></li>
+	<li><p><a href="https://web.stanford.edu/class/ee363/lectures/">More on Lyapunov Theory @Stanford</a></p></li>
+	<li><p>Errata to <i>Partial Differential Equations</i> by Lawrence C. Evans <a class="pdf" href="https://math.berkeley.edu/~evans/errata.PDE.third.printing2.pdf">PDF</a></p></li>
+	<li><p><a href="http://math.bu.edu/people/bob/hsd/errata.html">Errata to <i>Differential Equations, Dynamical Systems, and an Introduction to Chaos</i> by Morris Hirsch, Robert L. Devaney, and Stephen Smale</a></p></li>
 </ul>
-<h3><a href="#top">Homological Algebra 同调代数</a></h3>
+<h3 id="lin-alg">Linear Algebra</h3>
 <ul>
-<li><p>“Introduction to Homological Algebra” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53tlhAM-Zf0pRKNB541ZTi2">Videos</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/AninttoHomAlg/">An Introduction to Homological Algebra @BIMSA</a></p>
-</li>
+	<li><p>Lecture Notes on Linear Algebra <a class="pdf" href="http://210.45.79.25/xxds/线性代数讲义.pdf" title="USTC only">PDF</a></p></li>
+	<li><p>Notes and Homework Assignments <a class="pdf" href="files/LA.pdf">PDF</a></p></li>
 </ul>
-<h3><a href="#top">Lie Groups and Lie Algebras 李群与李代数</a></h3>
+<h3 id="abs-alg">Abstract Algebra</h3>
 <ul>
-<li><p>“Lie Groups” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53RWBkiHKoOsTw-dGHAoJ-h">Videos</a></p>
-</li>
-<li><p>“Lie Groups and Lie Algebras” by Siqi Liu <a class="video" href="https://www.bilibili.com/video/BV1JH4y177KC">Videos</a></p></li>
-<li><p><a href="https://bimsa.net/activity/InttoLiealg/">Introduction to Lie Algebras @BIMSA</a></p>
-</li>
+	<li><p>Notes and Homework Assignments <a class="pdf" href="files/Algebra.pdf">PDF</a></p></li>
+	<li><p>Visit <a href="https://people.maths.bris.ac.uk/~matyd/GroupNames/index.html">Group Names</a>, <a href="https://nathancarter.github.io/group-explorer/index.html">Group Explorer</a>, and <a href="https://groups.quendi.de/">Number of Small Groups</a> for an excursion among groups</p></li>
+	<li><p>Abstract Algebra @BSU <a class="video" href="https://www.youtube.com/playlist?list=PLL0ATV5XYF8DTGAPKRPtYa4E8rOLcw88y">Videos</a></p></li>
+	<li><p><a href="https://web.archive.org/web/20170423133403/https://crazyproject.wordpress.com/aadf/">Solutions to exercises from <i>Abstract Algebra</i> by Dummit and Foote</a></p></li>
 </ul>
-<h3 id="probability"><a href="#top">Probability Theory 概率论</a></h3>
+<h3 id="com-alg">Commutative Algebra</h3>
 <ul>
-<li><p>Notes and Homework Assignments <a class="pdf" href="files/Prob.pdf">Part 1</a> <a class="pdf" href="files/ProbOC.pdf" title="Advanced topics">Part 2</a> with <a class="pdf" href="files/Prob-Guide.pdf">Guide on Exercises</a></p>
-</li>
-<li><p><a href="https://www.math.wm.edu/~leemis/chart/UDR/UDR.html">Univariate Distribution Relationships</a></p>
-</li>
+	<li><p>“Commutative Algebra” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53rSexSz7vsYt-3rpHPR3HB">Videos</a></p></li>
+	<li><p><a href="https://agag-gathmann.math.rptu.de/en/commalg.php">Notes on Commutative Algebra @RPTU</a></p></li>
 </ul>
-<h3><a href="#top">Applied Stochastic Processes 实用随机过程</a></h3>
+<h3 id="hom-alg">Homological Algebra</h3>
 <ul>
-<li><p>Slides (Spring 2024)</p>
-    <p>1. Preliminaries <a class="slides" href="files/SP-PPT-1.pdf">Slides</a></p>
-    <p>2. The Poisson Process <a class="slides" href="files/SP-PPT-2.pdf">Slides</a></p>
-    <p>3. Renewal Theory <a class="slides" href="files/SP-PPT-3.pdf">Slides</a></p>
-    <p>4. Markov Chains <a class="slides" href="files/SP-PPT-4.pdf">Slides</a></p>
-    <p>5. Continuous-Time Markov Chains <a class="slides" href="files/SP-PPT-5.pdf">Slides</a></p>
-    <p>6. Martingales <a class="slides" href="files/SP-PPT-6.pdf">Slides</a></p>
-    <p>7. Random Walks <a class="slides" href="files/SP-PPT-7.pdf">Slides</a></p>
-    <p>8. Brownian Motion and Other Markov Processes <a class="slides" href="files/SP-PPT-8.pdf">Slides</a></p>
-</li>
-<li><p>Selected Solutions to <i>Stochastic Processes</i> by Sheldon M. Ross <a class="pdf" href="files/SP.pdf">PDF</a></p>
-    <p>Handwritten notes on Chapters 4–8 <a class="pdf" href="files/SP-Notes.pdf">PDF</a></p>
-</li>
-<li><p><a href="https://www.columbia.edu/%7Eww2040/6711F13/homework6711.html">Homework with Hints and Supplements @Columbia</a></p>
-</li>
-<li><p><a href="https://ionides.github.io/620/">Applied Probability and Stochastic Modeling @UMich</a></p>
-</li>
-<li><p><a href="https://www.math.pku.edu.cn/teachers/lidf/course/stochproc/stochprocnotes/html/_book/index.html">Applied Stochastic Processes @PKU</a></p>
-</li>
+	<li><p>“Introduction to Homological Algebra” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53tlhAM-Zf0pRKNB541ZTi2">Videos</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/AninttoHomAlg/">An Introduction to Homological Algebra @BIMSA</a></p></li>
 </ul>
-<h3 id="geometry"><a href="#top">Foundations of Geometry 几何学基础</a></h3>
+<h3 id="lie-alg">Lie Groups and Lie Algebras</h3>
 <ul>
-<li><p>Lecture Notes on Foundations of Geometry <a class="pdf" href="files/Geom-22.pdf">PDF</a></p>
-</li>
+	<li><p>“Lie Groups” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53RWBkiHKoOsTw-dGHAoJ-h">Videos</a></p></li>
+	<li><p>“Lie Groups and Lie Algebras” by Siqi Liu <a class="video" href="https://www.bilibili.com/video/BV1JH4y177KC/">Videos</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/InttoLiealg/">Introduction to Lie Algebras @BIMSA</a></p></li>
 </ul>
-</ul>
-<h3><a href="#top">General Topology 拓扑学</a></h3>
+<h3 id="comb">Combinatorics</h3>
 <ul>
-<li><p>Topology (<a href="http://staff.ustc.edu.cn/~wangzuoq/Courses/24F-Topology/index.html" title="Course homepage: Fall 2024">Honors</a>) Homework Assignments <a class="pdf" href="files/Topo.pdf">PDF</a></p>
-</li>
-<li><p>Corrections to Lee’s <i>Introduction to Topological Manifolds</i> <a class="pdf" href="https://sites.math.washington.edu/%7Elee/Books/ITM/errata.pdf">PDF</a></p>
-</li>
-<li><p><a href="https://topology.pi-base.org/">\(\pi\)-Base</a> — a community database of topological counterexamples</p>
-</li>
-<li><p><a href="https://dantopology.wordpress.com/">Dan Ma’s Topology Blog</a> — expository articles in general topology</p>
-</li>
+	<li><p>“Extremal Combinatorics” by Jonathan Noel <a class="video" href="https://www.youtube.com/playlist?list=PLtxJg53s2o0MEvvdIxPKI1AXYLI1cH4A2">Videos</a></p></li>
 </ul>
-<h3><a href="#top">Differential Geometry 微分几何</a></h3>
+<h3 id="prob">Probability Theory</h3>
 <ul>
-<li><p>Differential Geometry (Honors) Homework Assignments <a class="pdf" href="files/DG.pdf">PDF</a></p>
-</li>
-<li><p>Hints and Extensions to Chapters 1–5 by Rui Xiong <a class="pdf" href="files/DG-Supp.pdf">PDF</a></p>
-</li>
-<li><p><a href="https://max.book118.com/html/2018/1228/8126112126001141.shtm">Reference for Global Differential Geometry</a></p>
-</li>
+	<li><p>Notes and Homework Assignments <a class="pdf" href="files/Prob.pdf">Part 1</a> <a class="pdf" href="files/ProbOC.pdf" title="Advanced topics">Part 2</a> with <a class="pdf" href="files/Prob-Guide.pdf">Guide on Exercises</a></p></li>
+	<li><p><a href="https://www.math.wm.edu/~leemis/chart/UDR/UDR.html">Univariate Distribution Relationships</a></p></li>
 </ul>
-<h3><a href="#top">Differentiable Manifolds 微分流形</a></h3>
+<h3 id="stoch-proc">Stochastic Processes</h3>
 <ul>
-<li><p>Differentiable Manifolds (<a href="https://jzhang-ustc.github.io/MATH5003P.html" title="Course homepage: Fall 2024">MATH5003P</a>) Homework Assignments <a class="pdf" href="files/DM.pdf">PDF</a></p>
-</li>
-<li><p>Corrections to Lee’s <i>Introduction to Smooth Manifolds</i> <a class="pdf" href="https://sites.math.washington.edu/~lee/Books/ISM/errata.pdf">PDF</a></p>
-</li>
-<li>“Manifolds and Geometry” by Jiaqiang Mei <a class="video" href="https://www.bilibili.com/video/BV1Ga411T7EL">Videos</a>
-</li>
+	<li><p>Applied Stochastic Processes (Spring 2024)</p>
+		<ol>
+			<li><p>Preliminaries <a class="slides" href="files/SP-1.pdf">Slides</a></p></li>
+			<li><p>The Poisson Process <a class="slides" href="files/SP-2.pdf">Slides</a></p></li>
+			<li><p>Renewal Theory <a class="slides" href="files/SP-3.pdf">Slides</a></p></li>
+			<li><p>Markov Chains <a class="slides" href="files/SP-4.pdf">Slides</a></p></li>
+			<li><p>Continuous-Time Markov Chains <a class="slides" href="files/SP-5.pdf">Slides</a></p></li>
+			<li><p>Martingales <a class="slides" href="files/SP-6.pdf">Slides</a></p></li>
+			<li><p>Random Walks <a class="slides" href="files/SP-7.pdf">Slides</a></p></li>
+			<li><p>Brownian Motion and Other Markov Processes <a class="slides" href="files/SP-8.pdf">Slides</a></p></li>
+		</ol>
+	</li>
+	<li><p>Selected Solutions to <i>Stochastic Processes</i> by Sheldon M. Ross <a class="pdf" href="files/SP.pdf">PDF</a></p></li>
+	<li><p>Handwritten notes on Chapters 4–8 <a class="pdf" href="files/SP-Notes.pdf">PDF</a></p></li>
+	<li><p><a href="https://www.columbia.edu/%7Eww2040/6711F13/homework6711.html">Homework with Hints and Supplements @Columbia</a></p></li>
+	<li><p><a href="https://ionides.github.io/620/">Applied Probability and Stochastic Modeling @UMich</a></p></li>
+	<li><p><a href="https://www.math.pku.edu.cn/teachers/lidf/course/stochproc/stochprocnotes/html/_book/index.html">Applied Stochastic Processes @PKU</a></p></li>
 </ul>
-<h3><a href="#top">Riemannian Geometry 黎曼几何</a></h3>
+<h3 id="found-geo">Foundations of Geometry</h3>
+<ul><li><p>Lecture Notes on Foundations of Geometry <a class="pdf" href="files/Geom-22.pdf">PDF</a></p></li></ul>
+<h3 id="gen-top">General Topology</h3>
 <ul>
-<li><p>Corrections to Lee’s <i>Introduction to Riemannian Manifolds</i> <a class="pdf" href="https://sites.math.washington.edu/~lee/Books/RM/errata.pdf">PDF</a></p>
-</li>
-<li><p>Riemannian Geometry @PKU <a class="video" href="https://resource.pku.edu.cn/index.php?r=course%2Fview&id=11177">Videos</a></p>
-</li>
-<li><p><a href="https://www.math.uni-bielefeld.de/~grigor/anm2.htm">Analysis on Manifolds by Alexander Grigor'yan</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/MorThe/">Morse Theory @BIMSA</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/AnInttoMinSur/">An Introduction to Minimal Surfaces @BIMSA</a></p>
-</li>
+	<li><p>Honors Topology Homework Assignments <a class="pdf" href="files/Topo.pdf">PDF</a></p></li>
+	<li><p>Corrections to Lee’s <i>Introduction to Topological Manifolds</i> <a class="pdf" href="https://sites.math.washington.edu/%7Elee/Books/ITM/errata.pdf">PDF</a></p></li>
+	<li><p><a href="https://topology.pi-base.org/">\(\pi\)-Base</a> — a community database of topological counterexamples</p></li>
+	<li><p><a href="https://dantopology.wordpress.com/">Dan Ma’s Topology Blog</a> — expository articles in general topology</p></li>
 </ul>
-<h3><a href="#top">Algebraic Topology 代数拓扑</a></h3>
+<h3 id="diff-geo">Differential Geometry</h3>
 <ul>
-<li><p>Algebraic Topology Homework Assignments <a class="pdf" href="files/AT.pdf">PDF</a></p>
-</li>
-<li><p>Videos available online <a class="video" href="https://www.youtube.com/playlist?list=PL2Rb_pWJf9JqgIR6RR3VFF2FwKCyaUUZn">Seminar</a> <a class="video" href="https://www.bilibili.com/video/BV12s411J7aV">NTU</a> <a class="video" href="https://www.bilibili.com/video/BV1vr421K74W">NCTS</a> <a class="video" href="https://www.bilibili.com/video/BV1aJ411J7ji">Nankai</a> <a class="video" href="https://www.youtube.com/playlist?list=PLOROtRhtegr7DmeMyFxfKxsljAVsAn_X4">Andrews Univ.</a></p>
-</li>
-<li><p><a href="https://www.bananaspace.org/wiki/讲义:代数拓扑_(H)">Algebraic Topology (Honors) @FDU</a></p>
-</li>
+	<li><p>Honors Differential Geometry Homework Assignments <a class="pdf" href="files/DG.pdf">PDF</a></p></li>
+	<li><p>Hints and Extensions to Chapters 1–5 by Rui Xiong <a class="pdf" href="files/DG-Supp.pdf">PDF</a></p></li>
+	<li><p><a href="https://max.book118.com/html/2018/1228/8126112126001141.shtm">Reference for Global Differential Geometry</a></p></li>
 </ul>
-<h3><a href="#top">Characteristic Classes 示性类</a></h3>
+<h3 id="sm-mfd">Smooth Manifolds</h3>
 <ul>
-<li><p><i>Characteristic Classes</i> by J. W. Milnor and J. D. Stasheff <a class="pdf" href="https://aareyanmanzoor.github.io/assets/books/characteristic-classes.pdf">PDF</a></p>
-</li>
-<li><p><i>Vector Bundles and K-Theory</i> by Allen Hatcher <a class="pdf" href="https://pi.math.cornell.edu/~hatcher/VBKT/VB.pdf">PDF</a></p>
-</li>
-<li><p>“Characteristic Classes” by Geometry Potsdam <a class="video" href="https://www.youtube.com/playlist?list=PLnrOCYZpQUuJN0zbBmiP_1u7rAC51MIuH">Videos</a></p>
-</li>
-<li><p><a href="https://www.math.stonybrook.edu/~markmclean/MAT566/">Differential Topology @SBU</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/fibbunchaclsindthm/">Fiber Bundles, Characteristic Classes, and Index Theorems @BIMSA</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/cobordism/">Cobordism, Index Theorems, and Generalized Symmetry @BIMSA</a></p>
-</li>
+	<li><p>Differentiable Manifolds (<a href="https://jzhang-ustc.github.io/MATH5003P.html" title="Course homepage: Fall 2024">MATH5003P</a>) Homework Assignments <a class="pdf" href="files/DM.pdf">PDF</a></p></li>
+	<li><p>Corrections to Lee’s <i>Introduction to Smooth Manifolds</i> <a class="pdf" href="https://sites.math.washington.edu/~lee/Books/ISM/errata.pdf">PDF</a></p></li>
+	<li><p>“Manifolds and Geometry” by Jiaqiang Mei <a class="video" href="https://www.bilibili.com/video/BV1Ga411T7EL/">Videos</a></p></li>
 </ul>
-<h3><a href="#top">Algebraic Geometry 代数几何</a></h3>
+<h3 id="riem-geo">Riemannian Geometry</h3>
 <ul>
-<li><p>“Algebraic Geometry” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53j51FG6wCbQKjBgpjKa5PX">I: Varieties</a> <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-">II: Schemes</a> <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53Rwr6ly1oUasJXR2Qerwgj">Extra Topics</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/AlgCur/">Algebraic Curves @BIMSA</a></p>
-</li>
-<li><p><a href="https://agag-gathmann.math.rptu.de/en/curves.php">Notes on Plane Algebraic Curves @RPTU</a></p>
-</li>
-<li><p><a href="https://agag-gathmann.math.rptu.de/en/alggeom.php">Notes on Algebraic Geometry @RPTU</a></p>
-</li>
-<li><p><a href="https://stacks.math.columbia.edu/">The Stacks project</a> — an open source textbook and reference work on algebraic geometry</p>
-</li>
-<li><p><a href="https://math.stanford.edu/~vakil/216blog/">The Rising Sea: Foundations of Algebraic Geometry Notes</a></p>
-</li>
+	<li><p>Riemannian Geometry Homework Assignments <a class="pdf" href="files/RG.pdf">PDF</a></p></li>
+	<li><p>Corrections to Lee’s <i>Introduction to Riemannian Manifolds</i> <a class="pdf" href="https://sites.math.washington.edu/~lee/Books/RM/errata.pdf">PDF</a></p></li>
+	<li><p>Riemannian Geometry @PKU <a class="video" href="https://resource.pku.edu.cn/index.php?r=course%2Fview&id=11177">Videos</a></p></li>
+	<li><p><a href="https://www.math.uni-bielefeld.de/~grigor/anm2.htm">Analysis on Manifolds by Alexander Grigor'yan</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/MorThe/">Morse Theory @BIMSA</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/AnInttoMinSur/">An Introduction to Minimal Surfaces @BIMSA</a></p></li>
 </ul>
-<h3 id="miscellaneous"><a href="#top">Freshman Seminar “科学与社会”研讨课</a></h3>
+<h3 id="alg-top">Algebraic Topology</h3>
 <ul>
-<li><p><i>Asymptotics and Numerical Approximation of the Riemann \(\zeta\) Function</i> <a class="slides" href="files/Riem-Zeta.pdf">Slides</a></p>
-</li>
+	<li><p>Algebraic Topology Homework Assignments <a class="pdf" href="files/AT.pdf">PDF</a></p></li>
+	<li><p>Videos available online <a class="video" href="https://www.youtube.com/playlist?list=PL2Rb_pWJf9JqgIR6RR3VFF2FwKCyaUUZn">Seminar</a> <a class="video" href="https://www.bilibili.com/video/BV12s411J7aV/">NTU</a> <a class="video" href="https://www.bilibili.com/video/BV1vr421K74W/">NCTS</a> <a class="video" href="https://www.bilibili.com/video/BV1aJ411J7ji/">Nankai</a> <a class="video" href="https://www.youtube.com/playlist?list=PLOROtRhtegr7DmeMyFxfKxsljAVsAn_X4">Andrews Univ.</a></p></li>
+	<li><p><a href="https://www.bananaspace.org/wiki/讲义:代数拓扑_(H)">Honors Algebraic Topology @FDU</a></p></li>
 </ul>
-<h3><a href="#top">Scientific Programming with Python 科学计算基础</a></h3>
+<h3 id="char-cls">Characteristic Classes</h3>
 <ul>
-<li><p>A Python Project for Random String Plucking and Overtone Generation <a class="pdf" href="files/Py-Proj.pdf">PDF</a></p>
-</li>
+	<li>
+		<p><i>Characteristic Classes</i> by J. W. Milnor and J. D. Stasheff <a class="pdf" href="files/CC.pdf">PDF</a> (adapted from the original <a href="https://github.com/AareyanManzoor/Characteristic-Classes">LaTeX project by the TeXromancers</a>)</p>
+	</li>
+	<li><p><i>Vector Bundles and K-Theory</i> by Allen Hatcher <a class="pdf" href="https://pi.math.cornell.edu/~hatcher/VBKT/VB.pdf">PDF</a></p></li>
+	<li><p>“Characteristic Classes” by Geometry Potsdam <a class="video" href="https://www.youtube.com/playlist?list=PLnrOCYZpQUuJN0zbBmiP_1u7rAC51MIuH">Videos</a></p></li>
+	<li><p><a href="https://www.math.stonybrook.edu/~markmclean/MAT566/">Differential Topology @SBU</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/fibbunchaclsindthm/">Fiber Bundles, Characteristic Classes, and Index Theorems @BIMSA</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/cobordism/">Cobordism, Index Theorems, and Generalized Symmetry @BIMSA</a></p></li>
 </ul>
-<h3><a href="#top">General Physics 普通物理</a></h3>
+<h3 id="alg-geo">Algebraic Geometry</h3>
 <ul>
-<li>Handwritten notes <a class="pdf" href="files/Mechanics.pdf">Mechanics</a> <a class="pdf" href="files/Thermotics.pdf">Thermotics</a> <a class="pdf" href="files/Optics.pdf">Optics</a> <a class="pdf" href="files/Atom-Phys.pdf">Atomic Physics</a>
-</li>
-<li><p><a href="https://www.feynmanlectures.caltech.edu/">The Feynman Lectures on Physics</a></p>
-</li>
+	<li><p>“Algebraic Geometry” by Richard E. Borcherds <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53j51FG6wCbQKjBgpjKa5PX">I: Varieties</a> <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-">II: Schemes</a> <a class="video" href="https://www.youtube.com/playlist?list=PL8yHsr3EFj53Rwr6ly1oUasJXR2Qerwgj">Extra Topics</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/AlgCur/">Algebraic Curves @BIMSA</a></p></li>
+	<li><p><a href="https://agag-gathmann.math.rptu.de/en/curves.php">Notes on Plane Algebraic Curves @RPTU</a></p></li>
+	<li><p><a href="https://agag-gathmann.math.rptu.de/en/alggeom.php">Notes on Algebraic Geometry @RPTU</a></p></li>
+	<li><p><a href="https://stacks.math.columbia.edu/">The Stacks project</a> — an open source textbook and reference work on algebraic geometry</p></li>
+	<li><p><a href="https://math.stanford.edu/~vakil/216blog/">The Rising Sea: Foundations of Algebraic Geometry Notes</a></p></li>
 </ul>
-<h2 id="links"><a href="#top">Useful Links</a></h2>
-<h3><a href="#top">USTC</a></h3>
+<h3 id="fr-sem">Freshman Seminar</h3>
+<ul><li><p><i>Asymptotics and Numerical Approximation of the Riemann \(\zeta\) Function</i> <a class="slides" href="files/Riem-Zeta.pdf">Slides</a></p></li></ul>
+<h3 id="sci-py">Scientific Programming with Python</h3>
+<ul><li><p>A Python Project for Random String Plucking and Overtone Generation <a class="pdf" href="files/Py-Proj.pdf">PDF</a></p></li></ul>
+<h3 id="gen-phys">General Physics</h3>
 <ul>
-<li><p><a href="https://igp.ustc.edu.cn/main.htm">Institute of Geometry and Physics</a></p>
-</li>
-<li><p><a href="https://cfmc.ustc.edu.cn/main.htm">China-France Mathematics Center</a></p>
-</li>
-<li><p><a href="https://oic.ustc.edu.cn/">Office of International Cooperation</a></p>
-</li>
-<li><p><a href="https://vista.ustc.edu.cn/">Global Vista Portal</a></p>
-</li>
-<li><p><a href="https://ustcmathexam.github.io/">USTC Math Exam Archive</a></p>
-</li>
-<li><p><a href="https://ustcflyer.com/welcome">USTC Flyers</a></p>
-</li>
+	<li>Short notes <a class="pdf" href="files/Mechanics.pdf">Mechanics</a> <a class="pdf" href="files/Thermotics.pdf">Thermotics</a> <a class="pdf" href="files/EM.pdf">Electromagnetism</a> <a class="pdf" href="files/Optics.pdf">Optics</a> <a class="pdf" href="files/Atom-Phys.pdf">Atomic Physics</a></li>
+	<li><p><a href="https://www.feynmanlectures.caltech.edu/">The Feynman Lectures on Physics</a></p></li>
 </ul>
-<h3><a href="#top">Mathematics</a></h3>
+<h2 id="links">Useful Links</h2>
+<h3>USTC</h3>
 <ul>
-<li><p><a href="https://math.stackexchange.com/">Mathematics Stack Exchange</a></p>
-</li>
-<li><p><a href="https://mathoverflow.net">MathOverflow</a></p>
-</li>
-<li><p><a href="https://approach0.xyz/search/">Approach Zero</a> — a math-aware search engine</p>
-</li>
-<li><p>Library Genesis <a class="text" href="https://libgen.is/">.is</a> <a class="text" href="https://libgen.li/">.li</a> <a class="text" href="https://libgen.gs/">.gs</a></p> 
-</li>
-<li><p><a href="https://www.bananaspace.org">Banana Space</a></p>
-</li>
-<li><p><a href="https://www.wolframalpha.com/">Wolfram Alpha</a></p>
-</li>
-<li><p><a href="https://doc.sagemath.org/html/en/reference/index.html">Sage Reference Manual</a></p>
-</li>
-<li><p><a href="https://arxiv.org/search/math">arXiv</a></p>
-</li>
-<li><p><a href="https://bimsa.net/activity/MathematicalCommunication/">Mathematical Communication @BIMSA</a></p>
-</li>
-<li><p><a href="https://venhance.github.io/napkin/Napkin.pdf">An Infinitely Large Napkin</a></p>
-</li>
-<li><p><a href="http://yau-contest.com/">S.-T. Yau College Student Mathematics Contest</a></p>
-</li>
-<li><p><a href="https://www.bananaspace.org/wiki/用户:Solution">The Legacy of FDUer</a></p>
-</li>
-<li><p><a href="https://sequencedb.net/">Sequence Machine</a></p>
-</li>
+	<li><p><a href="https://igp.ustc.edu.cn/main.htm">Institute of Geometry and Physics</a></p></li>
+	<li><p><a href="https://cfmc.ustc.edu.cn/main.htm">China–France Mathematics Center</a></p></li>
+	<li><p><a href="https://oic.ustc.edu.cn/">Office of International Cooperation</a></p></li>
+	<li><p><a href="https://vista.ustc.edu.cn/">Global Vista Portal</a></p></li>
+	<li><p><a href="http://wlkt.ustc.edu.cn/topic/list_0.htm" title="USTC only">Recorded Lecture Series</a></p></li>
+	<li><p><a href="https://ustcmathexam.github.io/">USTC Math Exam Archive</a></p></li>
+	<li><p><a href="https://ustcflyer.com/welcome">USTC Flyers</a></p></li>
 </ul>
-<h3><a href="#top">LaTeX</a></h3>
+<h3>Mathematics</h3>
 <ul>
-<li><p><a href="https://www.overleaf.com/">Overleaf</a> — Online LaTeX Editor</p>
-</li>
-<li><p><a href="https://tex.stackexchange.com">TeX Stack Exchange</a></p>
-</li>
-<li><p><a href="https://unitex-web.netlify.app/">TeX to Unicode</a></p>
-</li>
-<li><p><a href="https://www.tablesgenerator.com/">Create LaTeX Tables</a></p>
-</li>
-<li><p><a href="https://detexify.kirelabs.org/classify.html">Figure out LaTeX commands for symbols by drawing the symbol</a></p>
-</li>
-<li><p><a href="https://aareyanmanzoor.github.io/Texromancers.html">The TeXromancers</a> — a group that TeX’s up old book and modernizes notation in them</p>
-</li>
+	<li><p><a href="https://math.stackexchange.com/">Mathematics Stack Exchange</a></p></li>
+	<li><p><a href="https://mathoverflow.net">MathOverflow</a></p></li>
+	<li><p><a href="https://approach0.xyz/search/">Approach Zero</a> — a math-aware search engine</p></li>
+	<li><p>Library Genesis <a class="text" href="https://libgen.li/">.li</a> <a class="text" href="https://libgen.vg/">.vg</a> <a class="text" href="https://libgen.la/">.la</a> <a class="text" href="https://libgen.bz/">.bz</a> <a class="text" href="https://libgen.gl/">.gl</a></p> </li>
+	<li><p><a href="https://www.bananaspace.org">Banana Space</a></p></li>
+	<li><p><a href="https://www.wolframalpha.com/">Wolfram Alpha</a></p></li>
+	<li><p><a href="https://doc.sagemath.org/html/en/reference/index.html">Sage Reference Manual</a></p></li>
+	<li><p><a href="https://arxiv.org/search/math">arXiv</a></p></li>
+	<li><p><a href="https://bimsa.net/course.php">BIMSA Courses</a></p></li>
+	<li><p><a href="https://bimsa.net/activity/MathematicalCommunication/">Mathematical Communication @BIMSA</a></p></li>
+	<li><p><a href="https://venhance.github.io/napkin/Napkin.pdf">An Infinitely Large Napkin</a></p></li>
+	<li><p><a href="http://yau-contest.com/">S.-T. Yau College Student Mathematics Contest</a></p></li>
+	<li><p><a href="https://www.bananaspace.org/wiki/用户:Solution">The Legacy of FDUer</a></p></li>
+	<li><p><a href="https://oeis.org/">The Online Encyclopedia of Integer Sequences</a></p></li>
+	<li><p><a href="https://sequencedb.net/">Sequence Machine</a></p></li>
 </ul>
-<h3><a href="#top">Useful Tools</a></h3>
+<h3>LaTeX</h3>
 <ul>
-<li><p><a href="https://gptzero.me/">GPTZero</a> — AI Detection</p>
-</li>
-<li><p><a href="https://www.english-corpora.org/coca/">Corpus of Contemporary American English</a></p>
-</li>
-<li><p><a href="https://docstransfer.com">Documents Transfer</a></p>
-</li>
-<li><p>Screen Mirroring <a class="text" href="https://screenmirroring.app/receiver">Receiver</a> <a class="text" href="https://screenmirroring.app/sender">Sender</a></p>
-</li>
-<li><p><a href="https://djvu2pdf.com">DjVu to PDF</a></p>
-</li>
-<li><p><a href="https://convertio.co/pt/png-ico/">PNG to ICO</a></p>
-</li>
-<li><p><a href="https://www.flaticon.com/">Vector Icons and Stickers</a></p>
-</li>
-<li><p><a href="https://shields.io/">Shields</a> — Concise, consistent, and legible badges in SVG and raster format</p>
-</li>
-<li><p><a href="https://www.scribbr.com/citation/generator/">Bibliography Generator</a></p>
-</li>
+	<li><p><a href="https://www.overleaf.com/">Overleaf</a> — Online LaTeX Editor</p></li>
+	<li><p><a href="https://tex.stackexchange.com/">TeX Stack Exchange</a></p></li>
+	<li><p><a href="https://unitex-web.netlify.app/">TeX to Unicode</a></p></li>
+	<li><p><a href="https://www.tablesgenerator.com/">Create LaTeX Tables</a></p></li>
+	<li><p><a href="https://detexify.kirelabs.org/classify.html">Figure out LaTeX commands for symbols by drawing the symbol</a></p></li>
+	<li><p><a href="https://aareyanmanzoor.github.io/Texromancers.html">The TeXromancers</a> — a group that TeX’s up old book and modernizes notation in them</p></li>
 </ul>
-<h3><a href="#top">Others’ Homepages</a></h3>
+<h3>Utilities</h3>
 <ul>
-<li><p><a href="http://staff.ustc.edu.cn/~wangzuoq/">王作勤</a></p>
-</li>
-<li><p><a href="http://staff.ustc.edu.cn/~spliu/">刘世平</a></p>
-</li>
-<li><p><a href="http://staff.ustc.edu.cn/~yqliang/files/teaching.htm">梁永祺</a></p>
-</li>
-<li><p><a href="https://www.wwli.asia/">李文威</a></p>
-</li>
-<li><p><a href="http://faculty.bicmr.pku.edu.cn/~lxiao/teaching.htm">肖梁</a></p>
-</li>
-<li><p><a href="http://www.siqiliu.com/cn/">刘思齐</a></p>
-</li>
-<li><p><a href="https://sili-math.github.io/">李思</a></p>
-</li>
-<li><p><a href="https://newquanta.com/">陈童</a></p>
-</li>
-<li><p><a href="https://www.cnblogs.com/torsor/">谢启鸿</a></p>
-</li>
-<li><p><a href="https://web.evanchen.cc">陳誼廷</a></p>
-</li>
-<li><p><a href="http://www.math.ntu.edu.tw/~dragon/">王金龍</a></p>
-</li>
-<li><p>熊锐 <a class="text" href="https://www.cnblogs.com/XiongRuiMath/">cnBlogs</a> <a class="text" href="https://cubicbear.github.io/">GitHub Pages</a></p>
-</li>
-<li><p><a href="https://github.com/Weiyu-USTC/USTCmath-stat">李卫雨</a></p>
-</li>
-<li><p><a href="https://tysunseven.github.io/">孙天阳</a></p>
-</li>
-<li><p><a href="https://archaeus13.github.io/">郑滕飞</a></p>
-</li>
-<li><p><a href="https://www.math.uni-bielefeld.de/~grigor/">Alexander Grigor'yan</a></p>
-</li>
-<li><p><a href="https://pi.math.cornell.edu/~hatcher/">Allen Hatcher</a></p>
-</li>
-<li><p><a href="http://dec41.user.srcf.net/notes/">Dexter Chua</a></p>
-</li>
-<li><p><a href="https://www.imo.universite-paris-saclay.fr/~joel.merker/">Joël Merker</a></p>
-</li>
-<li><p><a href="https://sites.math.washington.edu/~lee/">John M. Lee</a></p>
-</li>
-<li><p><a href="https://www.math.stonybrook.edu/~jack/">John W. Milnor</a></p>
-</li>
-<li><p><a href="https://math.uchicago.edu/~may/">J.P. May</a></p>
-</li>
-<li><p><a href="https://www.jmilne.org/math/">J.S. Milne</a></p>
-</li>
-<li><p><a href="https://math.berkeley.edu/~evans/">Lawrence Craig Evans</a></p>
-</li>
-<li><p><a href="https://mtaylor.web.unc.edu/notes/">Michael Taylor</a></p>
-</li>
-<li><p><a href="https://palbin.web.illinois.edu/">Pierre Albin</a></p>
-</li>
-<li><p><a href="https://virtualmath1.stanford.edu/~vakil/">Ravi Vakil</a></p>
-</li>
-<li><p><a href="https://www.youtube.com/@richarde.borcherds7998/playlists">Richard E. Borcherds</a></p>
-</li>
-<li><p><a href="https://services.math.duke.edu/~rtd/">Rick Durrett</a></p>
-</li>
-<li><p><a href="https://travorlzh.github.io/">Travor Liu</a></p>
-</li>
+	<li><p><a href="https://gptzero.me/">GPTZero</a> — AI Detection</p></li>
+	<li><p><a href="https://www.english-corpora.org/coca/">Corpus of Contemporary American English</a></p></li>
+	<li><p>Screen Mirroring <a class="text" href="https://screenmirroring.app/receiver">Receiver</a> <a class="text" href="https://screenmirroring.app/sender">Sender</a></p></li>
+	<li><p><a href="https://djvu2pdf.com/">DjVu to PDF</a></p></li>
+	<li><p><a href="https://convertio.co/png-ico/">PNG to ICO</a></p></li>
+	<li><p><a href="https://www.flaticon.com/">Vector Icons and Stickers</a></p></li>
+	<li><p><a href="https://shields.io/">Shields</a> — Concise, consistent, and legible badges in SVG and raster format</p></li>
 </ul>
-<a href="https://info.flagcounter.com/WrpR"><img src="https://s01.flagcounter.com/count2/WrpR/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_18/viewers_0/labels_1/pageviews_1/flags_0/percent_0" draggable="false" alt="Flag Counter" title="The math page of Xiaoshuo Lin" border="0"></a>
 </td>
-</tr>
-</table>
-<!-- Prevent hash fragments from appearing in the URL -->
+</tr></table>
+<!-- Smooth scrolling navigation and prevention of hash fragments in the URL -->
 <script>
-    window.addEventListener("hashchange", function() {
-        history.replaceState(null, null, " ");
-    });
+	document.querySelectorAll("a[data-target]").forEach(link => {
+		link.addEventListener("click", e => {
+			e.preventDefault();
+			const id = link.getAttribute("data-target");
+			if (id === "top") {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			} else {
+				const target = document.getElementById(id);
+				if (target) {
+					target.scrollIntoView({ behavior: "smooth" });
+				}
+			}
+		});
+	});
+</script>
+<!-- Open submenu on hover with delay on mouse leave -->
+<script>
+	document.querySelectorAll("#layout-menu .has-submenu").forEach(item => {
+		const submenu = item.querySelector(".submenu");
+		let timer;
+		item.addEventListener("mouseenter", () => {
+			clearTimeout(timer);
+			submenu.classList.add("open");
+		});
+		item.addEventListener("mouseleave", () => {
+			timer = setTimeout(() => {
+				submenu.classList.remove("open");
+			}, 1000);
+		});
+	});
 </script>
 </body>
-<!-- Smooth scroll to top functionality -->
-<script>
-    document.querySelector('.scroll-to-top a').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-</script>
 </html>
