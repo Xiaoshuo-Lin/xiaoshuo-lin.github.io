@@ -42,6 +42,7 @@
 - [Lawrence Craig Evans](https://math.berkeley.edu/~evans/)
 - [Michael Taylor](https://mtaylor.web.unc.edu/notes/)
 - [Pierre Albin](https://palbin.web.illinois.edu/)
+- [Peter Petersen](https://www.math.ucla.edu/~petersen/)
 - [Ravi Vakil](https://virtualmath1.stanford.edu/~vakil/)
 - [Richard E. Borcherds](https://www.youtube.com/@richarde.borcherds7998/playlists)
 - [Rick Durrett](https://services.math.duke.edu/~rtd/)
